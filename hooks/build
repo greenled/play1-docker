@@ -1,0 +1,5 @@
+#!/bin/bash -xe
+. ./hooks/env
+docker build \
+	--build-arg "VERSION=$VERSION" \
+	-t $IMAGE_NAME .
